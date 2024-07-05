@@ -1,3 +1,4 @@
+#algoritmo feito pela aluna Larissa Laila Pöttker
 print('===================')
 print('Seja bem vindo ao algoritmo de criptografia da turma do 1º01!!!')
 print('===================')
@@ -5,7 +6,7 @@ chave = 3
 caracteres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 def criptografar():
     cripto =''
-    texto = input('Digite a frase a ser criptografada: ')
+    texto = input('\nDigite a frase a ser criptografada: ')
     texto=texto.upper()
     for letra in texto:
         if letra in caracteres:
@@ -22,7 +23,7 @@ def criptografar():
     repetir()
 def descriptografar():
         descripto =''
-        texto = input('Digite a frase a ser criptografada: ')
+        texto = input('\nDigite a frase a ser descriptografada: ')
         texto=texto.upper()
         for letra in texto:
             if letra in caracteres:
@@ -49,6 +50,9 @@ R:''')
     elif rep == '2':
         descriptografar()
     elif rep == '3':
-        ('Tchau!!!')
+        print('\nTchau!!!')
         print('Programa finalizado!!')
+    else:
+        print('\nOpção inválida, digite novamente.')
+        repetir()
 repetir()
